@@ -38,7 +38,7 @@ describe("formatDate", () => {
     });
 
     it("should return only minutes", () => {
-      const actual = formatDate(120).trim();
+      const actual = formatDate(120);
 
       const expected = "2m";
 
@@ -64,7 +64,7 @@ describe("formatDate", () => {
     });
 
     it("should work for hours only", () => {
-      const actual = formatDate(18000).trim();
+      const actual = formatDate(18000);
 
       const expected = "5h";
 
@@ -72,7 +72,7 @@ describe("formatDate", () => {
     });
 
     it("should work for hours and minutes", () => {
-      const actual = formatDate(18180).trim();
+      const actual = formatDate(18180);
 
       const expected = "5h 3m";
 

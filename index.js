@@ -10,7 +10,7 @@ const formatDate = timeInSeconds => {
 
   let time = (hours !== 0 ? `${hours}h ` : ``) + (minutes !== 0 ? `${minutes}m ` : ``) + (seconds !== 0 ? `${seconds}s` : ``);
 
-  return time;
+  return time.trim();
 
 };
 
